@@ -1,0 +1,75 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal-content {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-top: 99px;
+}
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-header,
+.modal-footer {
+  padding: 10px;
+  color: #fff;
+  background-image: linear-gradient(to right, #fc646d, #ff9047);
+  display: flex;
+}
+.modal-header {
+  justify-content: space-between;
+}
+.modal-footer {
+  justify-content: flex-end;
+}
+.crossButton {
+  background: none;
+  border: none;
+  font-size: xx-large;
+  border-radius: 50%;
+  -ms-transform: rotate(20deg);
+  transform: rotate(45deg);
+  color: #fff;
+  align-self: flex-start;
+}
+
+.modal-header-content {
+  margin: 0;
+  letter-spacing: 0.2px;
+  align-self: center;
+}
+.modal-header-title {
+  font-weight: 600;
+}
+.modal-header-description {
+  font-size: 12px;
+}
+.modal-body {
+  padding: 15px 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.grade {
+  width: 45%;
+}

@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+.wrapper {
+  min-height: calc(100vh - 20px);
+  margin: 10px 10px;
+}
+.button {
+  width: 100px;
+  border-radius: 7px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  background-color: #fff;
+}
+.historyBtn {
+  background-image: linear-gradient(to right, #fc646d, #ff9047);
+  color: #fff;
+  opacity: 0.8;
+}
+.bar-container {
+  height: 4px;
+  width: 100px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.verticalLineParent {
+  display: flex;
+  justify-content: center;
+  width: 33.33px;
+  height: 50px;
+}
+.vl {
+  width: 2.5px;
+  background-image: linear-gradient(#fc646d, #ff9047);
+}
+.GradeBox {
+  border: 1px solid rebeccapurple;
+  height: 50vh;
+  border-radius: 10px;
+  width: 30vw;
+}
